@@ -396,6 +396,31 @@ color: rgb(190, 14, 82);
          text-align: justify;
       }
 
+      .imagen-insta:hover {
+         filter: opacity(.4);
+      }
+      
+      .img-index{
+         animation-name: animacion-index;
+         animation-duration: 1.5s;
+         animation-timing-function: ease-in;
+         animation-delay: 2s;
+         animation-iteration-count: 3;
+   }
+
+   @keyframes animacion-index {
+         0%{
+         transform: scale(.5);
+         border-radius: 100%;
+         }
+         50%{
+         transform: scale(1);
+         }
+         100%{
+         transform: scale(1);
+         }
+   }
+
    .conteiner-img-left{
       display: flex;
       justify-content: space-between;
