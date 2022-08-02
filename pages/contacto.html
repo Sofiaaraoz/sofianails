@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../assets/logo/logo.png" type="image/x-icon">
+    <a href="../index.html">
+</head>
+
+<body>
+    <section>
+        <div class="banner-contacto">
+            <nav class="nav">
+                <img src="../assets/logo/logofinal.png" alt="logo-sofianails" width="100px">
+                <!--links a mis paginas-->
+                <ul class="nav__lista">
+                    <!--enlaces relativos-->
+                    <li class="lista__links"><a href="../index.html"> Inicio </a></li>
+                    <li class="lista__links"><a href="./servicios.html"> Servicios</a></li>
+                    <li class="lista__links"><a href="./cursos.html">Cursos</a></li>
+                    <li class="lista__links"><a href="./tienda.html">Tienda</a></li>
+                    <li class="lista__links lista__links--activo"><a href="#"> Contacto</a></li>
+                </ul>
+            </nav>
+            <h1 class="nombre-empresa h1">Contacto con Sofia<span>Nails</span></h1>
+        </div>
+        <h2 class="h2"> Dejanos tu consulta, pregunta o mensajito!</h2>
+        <!--formulario contacto-->
+        <form action="procesar.php" name="contato" method="post">
+            <fieldset class="contact-datos">
+                <legend>Hola!</legend>
+                <p>
+                    <label>Nombre:</label>
+                        <input type="text" name="nombre" placeholder="SOFIA" required>
+                  
+                </p>
+                <p>
+                    </label>
+                    <label> Apellido:</label>
+                        <input type="text" name="apellido" placeholder="NAILS" required>
+                   
+                </p>
+                <p>
+                    </label>
+                    <label> Celular:</label>
+                        <input type="number" name="Celular" placeholder="152345678" required>
+                    
+                </p>
+                <p>
+                    <label> Email:</label>
+                        <input type="email" name="email" placeholder="hola@sofianails.com.ar" required>
+                </p>
+                <!--
+<label> Contraseña:
+    <input type="password" name="contraseña" required>
+</label>-->
+
+                <!--radio-->
+                <h4>Sexo</h4>
+                <label for="sexo">Hombre</label>
+                <input type="radio" name="quien" value="hombre">
+                <label for="sexo">Mujer</label>
+                <input type="radio" name="quien" value="mujer">
+                <label for="sexo">Otro</label>
+                <input type="radio" name="quien" value="otro">
+
+                <!--checkbox-->
+                <h4>Tipo de consulta</h4>
+                
+                    <label for="linea">
+                    <input type="radio" name="linea" value="servicios">Turnos</label>
+            
+                    <label for="linea">
+                    <input type="radio" name="linea" value="cursoe">Cursos</label>
+
+                    <label for="linea">
+                    <input type="radio" name="linea" value="shop">Tienda</label>
+
+                    <label for="linea">
+                    <input type="radio" name="linea" value="shop">Trabaja con nosotros</label>
+
+                <!--menudesplegable-->
+
+                <h4>Servicios</h4>
+                <select name="accesorios">
+                    <option value="semipermanente">Esmaltado Semipermanente</option>
+                    <option value="semipermanente">Capping y Semipermanente</option>
+                    <option value="semipermanente">Uñas Esculpidas</option>
+                </select>
+
+                <h4>Cursos</h4>
+                <select name="accesorios">
+                    <option value="semipermanente">Curso de Esmaltado Semipermanente</option>
+                    <option value="semipermanente">Curso de Capping y Semipermanente</option>
+                    <option value="semipermanente">Curso de Manicuria Rusa</option>
+                </select>
+
+                <h4>Puesto</h4>
+                <select name="accesorios">
+                    <option value="semipermanente">Recepcion</option>
+                    <option value="semipermanente">Manicura</option>
+                    <option value="semipermanente">Otro</option>
+
+                </select>
+
+                <!--comentarios-->
+                <h4>Dejanos tu consulta:</h4>
+                <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+
+                <!--botones-->
+                <p class="boton-contact">
+                    <button type="submit">Enviar</button>
+                </p>
+                <p class="boton-contact">
+                    <button type="reset">Borrar Todo</button>
+                </p>
+
+            </fieldset>
+
+        </form>
+    </section>
+
+    <footer class="footer-grid">
+        <section>
+            <article>
+                <!--enlaces absolutos-->
+                <h4> Siguenos en nuestras redes!</h4>
+                <ul class="nav__lista">
+                    <li class="lista__links">
+                        <a href="https://www.instagram.com/sofianails.estetica/" target="_blank">
+                            <img src="../assets/redes/insta.png" alt="Instagram" width="50px"> </a>
+                    </li>
+                    <li class="lista__links">
+                        <a href="https://twitter.com/?lang=es" target="_blank"> <img src="../assets/redes/twitter.png"
+                                alt="Twitter" width="50px"></a>
+                    </li>
+                    <li class="lista__links">
+                        <a href="https://es-la.facebook.com/" target="_blank"> <img src="../assets/redes/facebook.png"
+                                alt="Facebook" width="50px"></a>
+                    </li>
+                    <li class="lista__links">
+                        <a href="https://www.whatsapp.com/?lang=es" target="_blank"> <img src="../assets/redes/wsp.png"
+                                alt="WhatsApp" width="50px"></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <articulo>
+            <h6> Desarrollado por SofiaNails </h6>
+        </articulo>
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>
