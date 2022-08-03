@@ -232,7 +232,7 @@ nav ul li a{
       background-attachment: fixed;
    }
 
-.banner.nav{
+.banner.menu-nav{
 opacity: .8;
 background: rgba(6, 0, 4, 0.285);
 }
@@ -314,7 +314,7 @@ si quiero cambiar el orden a los hijos
 
 
 }
-.nav{
+.menu-nav{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -486,30 +486,75 @@ color: rgb(190, 14, 82);
    outline: none;
    border: 1px solid #010001;
    color: rgb(15, 1, 11);
-   text-transform: uppercase;
+   text-transform: none;
    border-radius: 10px;
   
   
 }
-.contact-datos p{
+.form-control{
    margin-bottom: 1rem;
+   border: 1px solid #c40e66;
+   display: flex;
 }
-.contact-datos button{
+.form-control:focus{
+   box-shadow: 0 0 0 0.25rem #f239a84e;
+   border-color: #e82c9087;
+}
 
-   width: 50%;
-   padding: 0.5rem;
-   background: rgba(240, 171, 182, 0.34);
-   outline: none;
-   border: 1px solid #010001;
-   color: rgb(11, 1, 8);
-   text-transform: uppercase;
-   border-radius: 10px;
-   font-weight: bolder;
+.col-6{
+   width: 100%;
 }
-.boton-contact{
+.form-floating>label {
+   left:30px;
+}
+.form-check-input:checked {
+   background-color: #fd0dbda3;
+   border-color: #fd0d915f;
+}
+
+.col-md-4{
+   padding: 2rem;
+   border-top: 20px;
    text-align: center;
+   justify-content: center;
 }
 
+.navbar-dark .navbar-nav .nav-link{
+   color: black;
+
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+   color: rgba(255, 254, 254, 0.829);
+}
+.navbar-collapse{
+   flex-grow: initial;
+   
+}
+.navbar{
+   background-color: rgba(0, 0, 0, 0.228);
+   font-size: 20px;
+   font-family: 'Josefin Slab', serif;
+   font-weight: normal;
+
+}
+
+.navbar-brand{
+   padding-left: 10px;
+}
+
+.btn-primary:focus {
+   box-shadow: 0 0 0 0.25rem rgba(123, 3, 83, 0.5);
+}
+.btn-primary{
+   background-color: #e74d9748;
+   border: #53042a;
+}
+.btn-primary:hover{
+   background-color: #c40e54bd;
+}
+.btn-primary:active{
+   background-color: #c40e54bd;
+}
 @media only screen and (max-width: 576px){
 
 h1, h2, h3, h4, h5, h6, p {
@@ -588,14 +633,14 @@ h1, h2, h3, h4, h5, h6, p {
    margin-top: auto;
 }
 
-.nav{
+.menu-nav{
    display: flex;
    flex-direction: column;
    justify-content: left;
    padding: 0;
 
 }
-.nav a{
+.menu-nav a{
    margin-top: 1rem;
 }
 

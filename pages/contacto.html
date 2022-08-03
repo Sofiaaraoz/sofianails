@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Document</title>
     <link rel="shortcut icon" href="../assets/logo/logo.png" type="image/x-icon">
@@ -14,7 +15,7 @@
 <body>
     <section>
         <div class="banner-contacto">
-            <nav class="nav">
+            <nav class="menu-nav">
                 <img src="../assets/logo/logofinal.png" alt="logo-sofianails" width="100px">
                 <!--links a mis paginas-->
                 <ul class="nav__lista">
@@ -29,99 +30,94 @@
             <h1 class="nombre-empresa h1">Contacto con Sofia<span>Nails</span></h1>
         </div>
         <h2 class="h2"> Dejanos tu consulta, pregunta o mensajito!</h2>
-        <!--formulario contacto-->
-        <form action="procesar.php" name="contato" method="post">
-            <fieldset class="contact-datos">
-                <legend>Hola!</legend>
-                <p>
-                    <label>Nombre:</label>
-                        <input type="text" name="nombre" placeholder="SOFIA" required>
+
+<div class="container mt-4 mb-4 ">
+
+        <div class="form-floating mb-3 col-6">
+            <input type="text" class="form-control" id="floatingInput" placeholder="nombre" required>
+            <label for="floatingInput">Nombre</label>
+          </div>
+
+          <div class="form-floating mb-3 col-6">
+            <input type="text" class="form-control" id="floatingInput" placeholder="apellido" required>
+            <label for="floatingInput">Apellido</label>
+          </div>
+        <div class="form-floating mb-3 col-6">
+            <input type="email" class="form-control" id="floatingInput" placeholder="sofia@nails.com" requerid>
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3 col-6">
+            <input type="number" class="form-control" id="floatingInput" placeholder="telefono" required>
+            <label for="floatingInput">Celular</label>
+          </div>
+
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Consulta</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Servicios
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Cursos
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Tienda
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Trabajá con nosotros
+                </label>
+              </div>
+            </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Servicios</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Semipermanente</option>
+                  <option selected>Capping</option>
+                  <option selected>Esculpidas</option>
+                  </select>
+              </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Cursos</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Semipermanente</option>
+                      <option selected>Capping</option>
+                      <option selected>Esculpidas</option>
+                      <option selected>Nail Art</option>
+                      <option selected>Cristales</option>
+                      <option selected>Manicuria Rusa</option>
+                    </select>
+                </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Tienda</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Compras por Mayor</option>
+                          <option selected>Compras por Menor</option>
+                        </select>
+                    </div>
                   
-                </p>
-                <p>
-                    </label>
-                    <label> Apellido:</label>
-                        <input type="text" name="apellido" placeholder="NAILS" required>
-                   
-                </p>
-                <p>
-                    </label>
-                    <label> Celular:</label>
-                        <input type="number" name="Celular" placeholder="152345678" required>
-                    
-                </p>
-                <p>
-                    <label> Email:</label>
-                        <input type="email" name="email" placeholder="hola@sofianails.com.ar" required>
-                </p>
-                <!--
-<label> Contraseña:
-    <input type="password" name="contraseña" required>
-</label>-->
 
-                <!--radio-->
-                <h4>Sexo</h4>
-                <label for="sexo">Hombre</label>
-                <input type="radio" name="quien" value="hombre">
-                <label for="sexo">Mujer</label>
-                <input type="radio" name="quien" value="mujer">
-                <label for="sexo">Otro</label>
-                <input type="radio" name="quien" value="otro">
+          <div class="form-floating col-6">
+            <textarea class="form-control" placeholder="Dejanos tu mensaje" id="floatingTextarea2" style="height: 200px"></textarea>
+            <label for="floatingTextarea2">Dejanos tu mensaje!</label>
 
-                <!--checkbox-->
-                <h4>Tipo de consulta</h4>
-                
-                    <label for="linea">
-                    <input type="radio" name="linea" value="servicios">Turnos</label>
-            
-                    <label for="linea">
-                    <input type="radio" name="linea" value="cursoe">Cursos</label>
+          </div>
 
-                    <label for="linea">
-                    <input type="radio" name="linea" value="shop">Tienda</label>
-
-                    <label for="linea">
-                    <input type="radio" name="linea" value="shop">Trabaja con nosotros</label>
-
-                <!--menudesplegable-->
-
-                <h4>Servicios</h4>
-                <select name="accesorios">
-                    <option value="semipermanente">Esmaltado Semipermanente</option>
-                    <option value="semipermanente">Capping y Semipermanente</option>
-                    <option value="semipermanente">Uñas Esculpidas</option>
-                </select>
-
-                <h4>Cursos</h4>
-                <select name="accesorios">
-                    <option value="semipermanente">Curso de Esmaltado Semipermanente</option>
-                    <option value="semipermanente">Curso de Capping y Semipermanente</option>
-                    <option value="semipermanente">Curso de Manicuria Rusa</option>
-                </select>
-
-                <h4>Puesto</h4>
-                <select name="accesorios">
-                    <option value="semipermanente">Recepcion</option>
-                    <option value="semipermanente">Manicura</option>
-                    <option value="semipermanente">Otro</option>
-
-                </select>
-
-                <!--comentarios-->
-                <h4>Dejanos tu consulta:</h4>
-                <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-
-                <!--botones-->
-                <p class="boton-contact">
-                    <button type="submit">Enviar</button>
-                </p>
-                <p class="boton-contact">
-                    <button type="reset">Borrar Todo</button>
-                </p>
-
-            </fieldset>
-
-        </form>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">Borrar</button>
+            <button class="btn btn-primary" type="button">Enviar</button>
+          </div>
+          <!-- Example single danger button -->
     </section>
 
     <footer class="footer-grid">
@@ -153,6 +149,8 @@
             <h6> Desarrollado por SofiaNails </h6>
         </articulo>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 
 </html>
