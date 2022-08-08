@@ -1,0 +1,622 @@
+
+@import"colors";
+@import "img";
+//variables
+
+$background:rgb(254, 237, 254);
+$padding: 20px;
+
+body{
+    background-color:
+    $background;
+}
+
+nav{
+    ul{
+        li{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+p{
+    color: $color-parrafo;
+}
+
+
+/*GENERALES*/
+body{
+    background-size: cover;
+    background-position: center;
+
+    }
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+    @import url('https://fonts.googleapis.com/css2? family= Edu+QLD+Beginner & family= Josefin+Slab:wght@300 & family= Poppins:wght@100;200 & family= Yuji+Mai & mostrar=intercambiar');
+    
+    html{
+    font-size: 25px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: normal;
+    
+    }
+    h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    font-family: 'Josefin Slab', serif;
+    }
+    h1{
+    font-family: 'Josefin Slab', serif;
+    font-weight: normal;
+    font-size: 50px;
+    }
+    /*listas styles*/
+    ul{
+    list-style-type: none;
+    }
+    nav ul li a{
+    text-decoration: none;
+    }
+    .imagenes-centradas{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    }
+    .imagenes-end{
+    display: flex;
+    justify-content: end;
+    }
+    
+    .nombre-empresa span{
+    color: rgb(247, 79, 113);
+    }
+    
+    .h1{
+    display: flex;
+    padding: 30px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    }
+    .h2{
+        display: flex;
+        text-align: center;
+        position: center;
+        padding: 30px;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .h3{
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+    }
+    .h4{
+        display: flex;
+        padding: 15px;
+        justify-content: center;
+    }
+    .h5{
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .h6{
+        display: flex;
+        padding: 15px;
+        justify-content: center;
+        text-align: justify;
+    }
+/*NAVBAR*/
+    .navbar-dark .navbar-nav .nav-link{
+    color: black;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover{
+    color: rgba(255, 254, 254, 0.829);
+    }
+    .navbar-collapse{
+    flex-grow: initial;
+    }
+    .navbar{
+    background-color: rgba(0, 0, 0, 0.228);
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: normal;
+    }
+    
+    .navbar-brand{
+    padding-left: 10px;
+    }
+    main{
+    width: 100%;}
+    .conteiner-img-left{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text-rigth{
+        padding: 10px 70px;
+        text-align: justify;
+        line-height: 2;
+    }
+    
+    .img-left img{
+        width: 400px;
+        margin-left: 40px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        background-size: 100% auto;
+    }
+
+    .conteiner-img-rigth{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    
+    .text-left{
+        padding: 15px 70px;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    .img-rigth img{
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        background-size: 100% auto;
+        width: 400px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+
+    .boton-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*INDEX*/
+    .boton-index{
+    padding: 12px 25px;
+    background-color: rgb(248, 135, 250);
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Josefin Slab', serif;
+    text-transform: uppercase;}
+    
+    .instagram-img{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(1,1fr);
+        justify-items: center;
+        grid-row-gap: 10px;    
+        grid-column-gap: 5px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /*PARALLAX-INDEX*/
+    .banner{
+        width: 100%;  
+        height: 700px;
+        background-image: url(../assets/probando9.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+/*SERVICIO*/
+    .boton-servicios{
+    padding: 12px 25px;
+    background-color: rgb(126, 228, 236);
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Josefin Slab', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    }
+    
+    .articulos-servicios{
+    padding: 3rem 3rem;
+    }
+    
+    .articulos-servicios ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    }
+    .articulos-servicios ul li{
+    list-style: none;
+    flex: 0 0 33.333333%;
+    padding: 1rem;
+    } 
+    .articulos-servicios ul li img{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    }
+    
+    /*PARALLAX- SERVICIO*/
+    .banner-servicios{
+    width: 100%;  
+    height: 700px;
+    background-image: url(../assets/servicios/serviciosparallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    /*CURSOS*/
+    .boton-cursos{
+    padding: 12px 25px;
+    background-color: rgb(102, 148, 38);
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Josefin Slab', serif;
+    text-transform: uppercase;
+    }
+    .lista-cursos{
+    padding: 1rem 2rem;
+    }
+    
+    .lista-cursos ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    }
+    .lista-cursos ul li{
+    list-style: none;
+    flex: 0 10 33.3%;
+    padding: 2rem;
+    } 
+    .lista-cursos ul li img{
+    width: 350px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    }
+    
+    /*parallax-cursos*/
+    .banner-cursos{
+    width: 100%;  
+    height: 700px;
+    background-image: url(../assets/cursos/parallaxdecrusos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+/*TIENDA*/
+    .boton-tienda {
+    padding: 12px 25px;
+    background-color: rgb(251, 160, 253);
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Josefin Slab', serif;
+    text-transform: uppercase;
+    }
+    
+    .articulos-tienda{
+    padding: 3rem 3rem;
+    }
+    
+    .articulos-tienda ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    }
+    .articulos-tienda ul li{
+    list-style: none;
+    flex: 0 0 33.333333%;
+    padding: 1.7rem;
+    } 
+    .articulos-tienda ul li img{
+    width: 100%;
+    }
+    
+    .iframe-tienda{
+    display: flex;
+    justify-content: center;
+    }
+    
+    /*parallax-tienda*/
+    .banner-tienda{
+    width: 100%;  
+    height: 700px;
+    background-image: url(../assets/tienda/laniales.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+/*CONTACTO*/
+    .contact-datos {
+        padding: 2rem;
+        margin: 0 8rem;
+    }
+    .contact-datos p label{
+        display: block;
+    }
+    
+    .contact-datos p input, textarea, select{
+          width: 100%;
+          padding: 0.5rem;
+          border: none;
+          background: rgb(249, 185, 196);
+          outline: none;
+          border: 1px solid #010001;
+          color: rgb(15, 1, 11);
+          text-transform: none;
+          border-radius: 10px;
+
+    }
+       .form-control{
+          margin-bottom: 1rem;
+          border: 1px solid #c40e66;
+          display: flex;
+       }
+       .form-control:focus{
+          box-shadow: 0 0 0 0.25rem #f239a84e;
+          border-color: #e82c9087;
+       }
+       
+       .col-6{
+          width: 100%;
+       }
+       .form-floating>label {
+          left:30px;
+       }
+       .form-check-input:checked {
+          background-color: #fd0dbda3;
+          border-color: #fd0d915f;
+       }
+
+    .col-md-4{
+          padding: 2rem;
+       border-top: 20px;
+       text-align: center;
+       justify-content: center;
+    }
+    .btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(123, 3, 83, 0.5);
+    }
+    .btn-primary{
+    background-color: #e74d9748;
+    border: #53042a;
+    }
+    .btn-primary:hover{
+    background-color: #c40e54bd;
+    }
+    .btn-primary:active{
+    background-color: #c40e54bd;
+    }
+    /*PARALLAX CONTACTO*/
+    .banner-contacto{
+    width: 100%;  
+    height: 700px;
+    background-image: url(../assets/contacto/fotodeportadadecontacto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    main section article img {
+       width: 700px;
+       margin-top: 10px;
+       margin-left: 10px;
+       border-radius: 10px;
+    }
+    /*metodologiaBEM*/
+    .contenedor{
+       max-width: 500px;
+       width: 100%;
+       margin-left: 15px;
+    }
+    /*modificador*/
+    .boton--alternativo{
+       font-size: 20px;
+       font-weight: normal;
+    }
+
+       .flex-container *{
+          padding: 10px;
+          margin: 10px;
+          border: 1px solid black; 
+          border-radius: 10px;
+          background-color: rgb(140, 243, 150);
+       }
+    
+    /*FOOTER*/
+    .footer-grid{
+       background-color: black;
+       color: black;
+       padding: 10px 10px;
+       background-image: url(../assets/backgrounds/estasi.webp);
+       background-size: cover;
+       background-position: center;
+    }
+    
+    .footer-grid .nav__lista {
+       display: grid;
+       grid-template-columns: repeat(4,0fr);
+       grid-template-rows: repeat(1,0fr);
+    }
+    .nav__lista{
+       display: flex;
+       height: 80px;
+       flex-direction: row;
+       flex-wrap: wrap;
+       /*Eje X*/
+       justify-content: flex-end;
+       /*Eje Y*/
+       align-items: center;
+       font-size: 20px;
+       font-family: 'Josefin Slab', serif;
+    }
+    .lista__links{
+       padding: 0 10px;
+       background-color: transparent;
+       text-transform: uppercase;
+    }
+    .lista__links a{
+       color: rgb(0, 2, 1);
+    }
+    .lista__links :hover{
+       color: rgb(190, 14, 82);
+    }
+    .lista__links--activo a{
+       color: rgb(248, 240, 245);
+    }
+    
+          /*ANIMACIONES*/
+          .imagen-insta:hover {
+             filter: opacity(.4);
+          }
+          
+          .img-index{
+             animation-name: animacion-index;
+             animation-duration: 1.5s;
+             animation-timing-function: ease-in;
+             animation-delay: 2s;
+             animation-iteration-count: 3;
+          }
+          
+          @keyframes animacion-index {
+             0%{
+             transform: scale(.5);
+             border-radius: 100%;
+          }
+          50%{
+             transform: scale(1);
+          }
+          100%{
+             transform: scale(1);
+          }
+       }
+    /*MEDIA*/
+    @media only screen and (max-width: 576px){
+    
+    h1, h2, h3, h4, h5, h6, p {
+       display: block;
+       font-size: inherit;
+    }
+    
+    .banner{
+       height: 450px;
+    }
+    
+    .instagram-img {
+       grid-template-columns: repeat(2,1fr);
+       grid-column-gap: 5px;
+    }
+    
+    .instagram-img img {
+       width: 90%;
+    }
+    
+    .conteiner-img-left {
+       flex-direction: column;
+    }
+    .conteiner-img-left .img-left img {
+          width: 100%;
+          margin: 0;
+    }
+    
+    .text-rigth {
+       padding: 10px;
+    }
+    
+    .conteiner-img-rigth {
+       flex-direction: column-reverse;
+    }
+    
+    .conteiner-img-rigth .text-left {
+       padding: 10px;
+    }
+    
+    .img-rigth img {
+       width: 100%;
+       margin-right: 0;
+    }
+    
+    .footer-grid .nav__lista {
+       grid-template-columns: repeat(4,1fr);
+    }
+    
+    .lista-cursos {
+       padding: 0;
+    }
+    
+    .lista-cursos ul{
+       display: flex;
+       flex: 1 1 auto;
+       flex-wrap: wrap;
+       padding-left: 0;
+    
+    }
+    .lista-cursos ul li{
+       flex: 1;
+       padding: 1rem;
+       
+       flex-direction: column;
+       display: flex;
+       
+    } 
+    .lista-cursos ul li img{
+       width: 100%;
+       height: 200px;
+    }
+    
+    
+    .lista-cursos ul li p{
+       margin-top: auto;
+    }
+    
+    .menu-nav{
+       display: flex;
+       flex-direction: column;
+       justify-content: left;
+       padding: 0;
+    
+    }
+    .menu-nav a{
+       margin-top: 1rem;
+    }
+    
+    .articulos-servicios ul li{
+       flex: 0 0 100%;
+    
+    } 
+    .articulos-tienda{
+       padding: 0;
+    }
+    
+    .articulos-tienda ul li{
+       flex: 0 0 50%;
+       padding: 1rem;
+       
+    } 
+    .articulos-tienda ul li img{
+       width: 100%;
+       height: 200px;
+    }
+    
+    
+    .contact-datos {
+       margin: 0;
+    }
+    }

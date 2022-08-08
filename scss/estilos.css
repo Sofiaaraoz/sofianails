@@ -1,20 +1,9 @@
-@import url("https://fonts.googleapis.com/css2? family= Edu+QLD+Beginner & family= Josefin+Slab:wght@300 & family= Poppins:wght@100;200 & family= Yuji+Mai & mostrar=intercambiar");
-body {
-  background-color: rgb(254, 237, 254);
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
-p {
-  color: rgb(1, 0, 0);
-}
-
 /*GENERALES*/
+@import url("https://fonts.googleapis.com/css2? family= Edu+QLD+Beginner & family= Josefin+Slab:wght@300 & family= Poppins:wght@100;200 & family= Yuji+Mai & mostrar=intercambiar");
 body {
   background-size: cover;
   background-position: center;
+  background-color: rgb(254, 237, 254);
 }
 
 * {
@@ -44,11 +33,11 @@ h1 {
 ul {
   list-style-type: none;
 }
-/*
+
 nav ul li a {
   text-decoration: none;
 }
-*/
+
 .imagenes-centradas {
   display: flex;
   text-align: center;
@@ -182,6 +171,20 @@ main {
   align-items: center;
 }
 
+/*Navbar con flexbo-FLEXBOX
+.flex-container{
+   height: 300px;
+   display: flex; 
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   align-items: center;
+   font-size: 3rem;
+   font-family: 'Josefin Slab', serif;
+   background-color: rgb(25, 42, 135);
+   border-radius: 10px;
+   border: 2px solid yellow;
+}*/
 /*INDEX*/
 .boton-index {
   padding: 12px 25px;
@@ -516,11 +519,29 @@ main section article img {
 }
 
 .img-index {
-  animation-name: animacion-index;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in;
-  animation-delay: 2s;
-  animation-iteration-count: 3;
+  -webkit-animation-name: animacion-index;
+          animation-name: animacion-index;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+@-webkit-keyframes animacion-index {
+  0% {
+    transform: scale(0.5);
+    border-radius: 100%;
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes animacion-index {
@@ -622,6 +643,4 @@ main section article img {
   .contact-datos {
     margin: 0;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
