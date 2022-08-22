@@ -322,12 +322,12 @@ select {
   text-transform: none;
   border-radius: 10px; }
 
-.form-control {
+.form-control, .form-select {
   margin-bottom: 1rem;
   border: 1px solid #c40e66;
   display: flex; }
 
-.form-control:focus {
+.form-control:focus, .form-select:focus {
   box-shadow: 0 0 0 0.25rem #f239a84e;
   border-color: #e82c9087; }
 
@@ -516,9 +516,11 @@ main section article img {
     padding: 0; }
   .articulos-tienda ul li {
     flex: 0 0 50%;
-    padding: 1rem; }
+    padding: 1.5rem; }
+  .articulos-tienda ul li h4 {
+    font-size: inherit; }
   .articulos-tienda ul li img {
     width: 100%;
-    height: 200px; }
+    height: auto; }
   .contact-datos {
     margin: 0; } }
