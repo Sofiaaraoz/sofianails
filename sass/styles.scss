@@ -86,7 +86,6 @@ nav ul li a {
     justify-content: center;
     margin-bottom: 2rem;
 }
-
 .imagenes-end {
     display: flex;
     justify-content: end;
@@ -133,6 +132,12 @@ nav ul li a {
     padding: 15px;
     justify-content: center;
     text-align: justify;
+}
+.grow:hover
+{
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
 }
 
 /*NAVBAR*/
@@ -211,6 +216,7 @@ main {
     align-items: center;
 }
 
+
 /*INDEX*/
 .boton-index {
     padding: 12px 25px;
@@ -221,6 +227,10 @@ main {
     font-size: 15px;
     font-family: 'Josefin Slab', serif;
     text-transform: uppercase;
+}
+.boton-index:hover {
+    background-color: #cb1a6ddb;
+    color: rgba(255, 254, 254, 0.829)
 }
 
 .instagram-img {
@@ -254,7 +264,10 @@ main {
     text-transform: uppercase;
     font-weight: normal;
 }
-
+.boton-servicios:hover {
+    background-color: #1879b6bd;
+    color: rgba(255, 254, 254, 0.829)
+}
 .articulos-servicios {
     padding: 3rem 3rem;
 }
@@ -292,13 +305,17 @@ main {
 /*CURSOS*/
 .boton-cursos {
     padding: 12px 25px;
-    background-color: rgb(102, 148, 38);
+    background-color: rgba(68, 208, 13, 0.895);
     border-radius: 20px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: 'Josefin Slab', serif;
     text-transform: uppercase;
+}
+.boton-cursos:hover {
+    background-color: #198209e0;
+    color: rgba(255, 254, 254, 0.829)
 }
 
 .lista-cursos {
@@ -337,15 +354,21 @@ main {
 }
 
 /*TIENDA*/
+
 .boton-tienda {
     padding: 12px 25px;
-    background-color: rgb(251, 160, 253);
+    background-color: rgb(247, 94, 209);
+    border: none;
     border-radius: 20px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: 'Josefin Slab', serif;
     text-transform: uppercase;
+}
+.boton-tienda:hover {
+    background-color: #a71358db;
+    color: rgba(255, 254, 254, 0.829)
 }
 
 .articulos-tienda {
@@ -356,7 +379,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-    
 }
 
 .articulos-tienda ul li {
@@ -367,6 +389,7 @@ main {
 
 .articulos-tienda ul li img {
     width: 100%;
+    border-radius: 1rem;
 }
 
 .iframe-tienda {
@@ -409,15 +432,13 @@ select {
 
 .form-control, .form-select {
     margin-bottom: 1rem;
-    border: 1px solid #c40e66;
+    border: 1px solid #e649958a;
     display: flex;
 }
 
 .form-control:focus, .form-select:focus {
     box-shadow: 0 0 0 0.25rem #f239a84e;
-    border-color: #e82c9087;
-}
-
+    border-color: #f441c7a1;}
 .col-6 {
     width: 100%;
 }
@@ -427,7 +448,7 @@ select {
 }
 
 .form-check-input:checked {
-    background-color: #fd0dbda3;
+    background-color: #f551c9a3;
     border-color: #fd0d915f;
 }
 
@@ -444,11 +465,12 @@ select {
 
 .btn-primary {
     background-color: #e74d9748;
-    border: #53042a;
+    border: #c61e70;
 }
 
 .btn-primary:hover {
-    background-color: #c40e54bd;
+    background-color: #ec4484bd;
+    border-color: #c40e66;
 }
 
 .btn-primary:active {
@@ -542,7 +564,6 @@ main section article img {
 .imagen-insta:hover {
     filter: opacity(.4);
 }
-
 .img-index {
     animation-name: animacion-index;
     animation-duration: 1.5s;
