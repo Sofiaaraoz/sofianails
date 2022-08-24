@@ -98,6 +98,9 @@ nav ul li a {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: rgba(255, 254, 254, 0.829); }
 
+.navbar-dark .navbar-nav .nav-link .active {
+  color: rgba(255, 254, 254, 0.829); }
+
 .navbar-collapse {
   flex-grow: initial; }
 
@@ -371,7 +374,8 @@ select {
   justify-content: center; }
 
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.25rem rgba(123, 3, 83, 0.5); }
+  box-shadow: 0 0 0 0.25rem rgba(123, 3, 83, 0.5);
+  background-color: #ef4195; }
 
 .btn-primary {
   background-color: #e74d9748;
@@ -382,7 +386,10 @@ select {
   border-color: #c40e66; }
 
 .btn-primary:active {
-  background-color: #c40e54bd; }
+  background: #c40e54bd; }
+
+.btn-primary:active:focus {
+  box-shadow: 0 0 0 0.25rem rgba(236, 135, 245, 0.5); }
 
 /*PARALLAX CONTACTO*/
 .banner-contacto {
