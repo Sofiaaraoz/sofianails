@@ -294,6 +294,9 @@ main {
   font-family: 'Josefin Slab', serif;
   text-transform: uppercase; }
 
+.boton-tienda a {
+  text-decoration: none; }
+
 .boton-tienda:hover {
   background-color: #a71358db;
   color: rgba(255, 254, 254, 0.829); }
@@ -354,12 +357,14 @@ select {
   text-transform: none;
   border-radius: 10px; }
 
-.form-control, .form-select {
+.form-control,
+.form-select {
   margin-bottom: 1rem;
   border: 1px solid #e649958a;
   display: flex; }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
   box-shadow: 0 0 0 0.25rem #f239a84e;
   border-color: #f441c7a1; }
 

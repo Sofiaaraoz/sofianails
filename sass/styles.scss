@@ -375,7 +375,10 @@ main {
     font-family: 'Josefin Slab', serif;
     text-transform: uppercase;
 }
+.boton-tienda a{
 
+    text-decoration: none;
+}
 .boton-tienda:hover {
     background-color: #a71358db;
     color: rgba(255, 254, 254, 0.829)
